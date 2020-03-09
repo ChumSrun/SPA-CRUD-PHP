@@ -1,0 +1,180 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  color: black;
+}
+
+main ul {
+  list-style: none;
+}
+
+main ul li::before {
+  content: "\2022";
+  color: rgb(255, 115, 0);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.paraG {
+  text-indent: 1.8em;
+  text-align: justify;
+  margin-bottom: 1.7em;
+}
+
+.stepParag img {
+  margin: 0 0 0.9rem;
+}
+
+.stepParag p {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+/* navbar */
+main {
+  margin-left: 5rem;
+  padding: 1rem;
+}
+
+body>nav>ul {
+  color: white;
+  padding-left: 0;
+  list-style: none;
+}
+
+.navbarCu {
+  position: fixed;
+  z-index: 100;
+  background-color: rgb(38, 158, 98);
+  transition: all 300ms ease-in-out;
+}
+
+.navbar-navCu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.nav-itemF {
+  width: 100%;
+}
+
+.nav-linkCu {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: all 300ms;
+  cursor: pointer;
+}
+
+.nav-linkCu:hover {
+  background: rgb(27, 93, 71);
+}
+
+.link-textCu {
+  display: none;
+  font-size: 1.15em;
+}
+
+.nav-linkCu i {
+  font-size: 1.7em;
+  margin: 0 1.5rem;
+}
+
+.logoCu {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+}
+
+
+.logo-textCu {
+  display: inline;
+  position: absolute;
+  left: -999px;
+
+  transition: all 300ms;
+  padding: 0 2px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  #content {
+    margin-bottom: 3.5rem;
+  }
+
+  .newQuestionBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .newQuestionBtn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbarCu {
+    bottom: 0;
+    width: 100vw;
+    height: 3.4rem;
+  }
+
+  .logoCu {
+    display: none;
+  }
+
+  .navbar-navCu {
+    flex-direction: row;
+  }
+
+  .nav-linkCu {
+    font-size: 1em;
+    justify-content: center;
+    height: 3.4rem;
+
+  }
+
+  main {
+    margin: 0;
+  }
+
+}
+
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbarCu {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbarCu:hover {
+    width: 16rem;
+  }
+
+  .navbarCu:hover .link-textCu {
+    display: inline;
+  }
+
+  .navbarCu:hover .logoCu i {
+    margin-left: 11rem;
+  }
+
+  .navbarCu:hover .logo-textCu {
+    left: 8px;
+  }
+}
